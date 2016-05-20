@@ -3,7 +3,7 @@ local function action_by_reply(extra, success, result)
   local hash = 'rank:variables'
   local text = ''
     local value = redis:hget(hash, result.from.peer_id)
-     if value then
+     if is value then
         if result.from.peer_id == tonumber(makan) then
            text = text..'این مدیر کل رباته  \n\n'
          elseif is_admin2(result.from.peer_id) then
