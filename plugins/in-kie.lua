@@ -8,9 +8,9 @@ local function action_by_reply(extra, success, result)
            text = text..'این مدیر کل رباته  \n\n'
          elseif is_admin2(result.from.peer_id) then
            text = text..'این ادمین رباته \n\n'
-         elseif is_owner1(result.from.peer_id) then
+         elseif is_owner2(result.from.peer_id) then
            text = text..'این مدیر کل گروهه \n\n'
-         elseif is_momod1(result.from.peer_id) then
+         elseif is_momod2(result.from.peer_id) then
            text = text..'این مدیر گروهه \n\n'
      else
            text = text..' این کاربره دیگه\n\n'
