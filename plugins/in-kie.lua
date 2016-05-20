@@ -12,9 +12,6 @@ local function action_by_reply(extra, success, result)
            text = text..'این مدیر کل گروهه \n\n'
          elseif is_momod2(result.from.peer_id) then
            text = text..'این مدیر گروهه \n\n'
-     else
-           text = text..' این کاربره دیگه\n\n'
-      end
       else
        text = text..'این '..value..' هست \n\n'
      end
